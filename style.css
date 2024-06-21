@@ -1,80 +1,95 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: max-content;
-    gap: 20px;
-    max-width: 1200px;
-    margin-inline: auto;
-    padding: 40px;
-  }
-  
-  .item {
-    border-radius: 20px;
-    display: flex;
-  }
-  
-  .item img {
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .item-span-4 {
-    grid-row: span 4;
-  }
-  
-  .item-span-8 {
-    grid-row: span 8;
-  }
-  
-  .item-span-9 {
-    grid-row: span 9;
-  }
-  
-  .item-span-10 {
-    grid-row: span 10;
-  }
-  
-  .item-span-11 {
-    grid-row: span 11;
-  }
-  
-  .item-span-12 {
-    grid-row: span 12;
-  }
-  
-  .item-span-14 {
-    grid-row: span 14;
-  }
-  .item-span-8 {
-    grid-row: span 8;
-  }
-  .item-span-14 {
-    grid-row: span 14;
-  }
-  .item-span-20 {
-    grid-row: span 20;
-  }
-  .item-span-16 {
-    grid-row: span 16;
-  }
-  .item-span-10 {
-    grid-row: span 10;
-  }
-  .item-span-14 {
-    grid-row: span 14;
-  }
-  
-  .item-span-12 {
-    grid-row: span 12;
-  }
-  .item-span-18 {
-    grid-row: span 10;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: max-content;
+  gap: 20px;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 40px;
+}
+
+.item {
+  border-radius: 20px;
+   display: flex;
+  overflow-y: hidden;
+  position: relative;
+}
+.btn-cont {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  padding: 1rem;
+  background-color: grey;
+  border-radius: 0 0 20px 20px;
+  transition: all 0.8s ease;
+
+}
+.item:hover .btn-cont {
+  bottom: 0;
+}
+
+.item img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.item-span-4 {
+  grid-row: span 4;
+}
+
+.item-span-8 {
+  grid-row: span 8;
+}
+
+.item-span-9 {
+  grid-row: span 9;
+}
+
+.item-span-10 {
+  grid-row: span 10;
+}
+
+.item-span-11 {
+  grid-row: span 11;
+}
+
+.item-span-12 {
+  grid-row: span 12;
+}
+
+.item-span-14 {
+  grid-row: span 14;
+}
+.item-span-8 {
+  grid-row: span 8;
+}
+.item-span-14 {
+  grid-row: span 14;
+}
+.item-span-20 {
+  grid-row: span 20;
+}
+.item-span-16 {
+  grid-row: span 16;
+}
+.item-span-10 {
+  grid-row: span 10;
+}
+.item-span-14 {
+  grid-row: span 14;
+}
+
+.item-span-12 {
+  grid-row: span 12;
+}
+.item-span-18 {
+  grid-row: span 10;
+}
